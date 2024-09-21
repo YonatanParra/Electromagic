@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electromagic</title>
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header class="mdl-layout__header mdl-layout__header--black">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">ELECTROMAGIC</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link active" href="#" data-target="productos">Productos</a>
+                <a class="mdl-navigation__link" href="#" data-target="carrito">Carrito</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="mdl-layout__content">
+        <div class="mdl-grid">
+            <!-- Sección de Productos -->
+            <section id="productos" class="mdl-cell mdl-cell--12-col">
+                <h2 class="text-center">Productos</h2>
+                <div class="mdl-grid">
+                    <!-- Producto 1: Teclado -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__media">
+                                <img src="images/tecladogamer.png" alt="Teclado" style="width: 100%; height: auto; object-fit: cover;">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h5 class="mdl-card__title-text text-center">Teclado</h5>
+                            </div>
+                            <div class="mdl-card__supporting-text text-center">
+                                <p class="text-primary fs-5">$100.000 COP</p>
+                            </div>
+                            <div class="mdl-card__actions text-center">
+                                <button class="mdl-button mdl-js-button mdl-button--raised agregar-carrito">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2: Mouse -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__media">
+                                <img src="images/mouse.jpg" alt="Mouse" style="width: 100%; height: auto; object-fit: cover;">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h5 class="mdl-card__title-text text-center">Mouse</h5>
+                            </div>
+                            <div class="mdl-card__supporting-text text-center">
+                                <p class="text-primary fs-5">$50.000 COP</p>
+                            </div>
+                            <div class="mdl-card__actions text-center">
+                                <button class="mdl-button mdl-js-button mdl-button--raised agregar-carrito">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3: Auricular -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__media">
+                                <img src="images/Auricular.jpg" alt="Auricular" style="width: 100%; height: auto; object-fit: cover;">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h5 class="mdl-card__title-text text-center">Auricular</h5>
+                            </div>
+                            <div class="mdl-card__supporting-text text-center">
+                                <p class="text-primary fs-5">$80.000 COP</p>
+                            </div>
+                            <div class="mdl-card__actions text-center">
+                                <button class="mdl-button mdl-js-button mdl-button--raised agregar-carrito">Agregar al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botón para cambiar el fondo -->
+                <div class="text-center" style="margin-top: 20px;">
+                    <button id="cambiar-fondo" class="mdl-button mdl-js-button mdl-button--raised">Cambiar Fondo</button>
+                </div>
+            </section>
+
+            <!-- Sección del Carrito -->
+            <section id="carrito" class="mdl-cell mdl-cell--12-col d-none">
+                <h2 class="text-center">Carrito de Compras</h2>
+                <div class="mdl-card">
+                    <div class="mdl-card__supporting-text">
+                        <ul class="mdl-list" id="lista-carrito"></ul>
+                        <h4 class="text-end text-primary" id="total">Total: $0.00</h4>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="vaciar-carrito">Vaciar Carrito</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Pie de Página -->
+    <footer class="mdl-footer mdl-footer--dark mdl-color--primary">
+        <div class="mdl-layout__footer-row">
+            <div class="mdl-layout-spacer"></div>
+            <span class="mdl-footer__text">© 2024 Electromagic</span>
+        </div>
+    </footer>
+    
+    <!-- Material Design Lite JS -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="index.js"></script>
+</body>
+</html>
